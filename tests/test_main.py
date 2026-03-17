@@ -1,5 +1,8 @@
-
 import pytest
+import io
+from contextlib import redirect_stdout
+from app import main
+import inspect
 
 from app.main import calculate_team_total_rating, elves_concert, feast_of_the_dwarves
 from app.players.dwarves.dwarf import Dwarf
